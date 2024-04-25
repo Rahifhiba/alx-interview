@@ -1,13 +1,12 @@
+#!/usr/bin/python3
 n = 5
 lst = []
-lst_final = []
 for i in range(0, 5):
     for j in str(11**i):
-        lst.append(int(j))
-        lst_final.append(lst)
-    print(lst)
+        lst.append(int(list(j)))
+    #print(lst)
 
-# print(lst_final)
+print(lst)
 
 
 # x = 5649
