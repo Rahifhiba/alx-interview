@@ -1,9 +1,6 @@
 #!/usr/bin/python3
+"""pascal triangles"""
 import math
-
-"""
-pascal triangle
-"""
 
 
 def pascal_triangle(n):
