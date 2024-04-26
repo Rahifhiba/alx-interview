@@ -1,13 +1,20 @@
 #!/usr/bin/python3
-"""pascal triangle"""
+import math
+
+"""
+pascal triangle
+"""
 
 
 def pascal_triangle(n):
     """doc"""
-    lst = []
-    if n <= 0:
-        return lst
-    for i in range(0, n):
-        res = [int(x) for x in str(11**i)]
-        lst.append(res)
-    return lst
+    pascal = lambda n, col: math.factorial(n) / (
+        math.factorial(col) * math.factorial(n - col)
+    )
+    lst_final = []
+    for row in range(n + 1):
+        lst = []
+        for col in range(row + 1):
+            lst.append(int(pascal(row, col)))
+        lst_final.append(lst)
+    return lst_final
