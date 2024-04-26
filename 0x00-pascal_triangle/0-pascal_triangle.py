@@ -3,13 +3,15 @@
 import math
 
 
+def pascal(n, col):
+    """pascal func"""
+    return math.factorial(n) / (math.factorial(col) * math.factorial(n - col))
+
+
 def pascal_triangle(n):
     """doc"""
-    if n<= 0:
+    if n <= 0:
         return []
-    pascal = lambda n, col: math.factorial(n) / (
-        math.factorial(col) * math.factorial(n - col)
-    )
     lst_final = []
     for row in range(n + 1):
         lst = []
