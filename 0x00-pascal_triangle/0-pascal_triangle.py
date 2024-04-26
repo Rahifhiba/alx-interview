@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 """pascal triangles"""
-import math
+
+
+def fac(n):
+    """factorial"""
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    return fact
 
 
 def pascal(n, col):
     """pascal func"""
-    return math.factorial(n) / (math.factorial(col) * math.factorial(n - col))
+    return fac(n) / (fac(col) * fac(n - col))
 
 
 def pascal_triangle(n):
