@@ -5,6 +5,8 @@ import math
 
 def pascal_triangle(n):
     """doc"""
+    if n<= 0:
+        return []
     pascal = lambda n, col: math.factorial(n) / (
         math.factorial(col) * math.factorial(n - col)
     )
