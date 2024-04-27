@@ -12,7 +12,7 @@ def fac(n):
 
 def pascal(n, col):
     """pascal func"""
-    return fac(n) / (fac(col) * fac(n - col))
+    return fac(n) // (fac(col) * fac(n - col))
 
 
 def pascal_triangle(n):
