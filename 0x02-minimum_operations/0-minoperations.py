@@ -9,7 +9,9 @@ def minOperations(n):
     operations needed to result in exactly n H"""
     num_op = []
     hs = "h"
-    while len(hs) != n:
+    while len(hs) < n:
+        if n <= 0:
+            return 0
         num_op.append("ca")
         le_hs = len(hs)
         if n % 2 == 0:

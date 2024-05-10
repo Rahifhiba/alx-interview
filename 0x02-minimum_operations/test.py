@@ -8,7 +8,7 @@
 def minOperations(n):
     num_op = []
     hs = "h"
-    while len(hs) != n:
+    while len(hs) < n:
         if n <= 0:
             return 0
         num_op.append("ca")
@@ -28,10 +28,10 @@ def minOperations(n):
 
 # hs = "h"
 # print(len(hs))
-n=5
-print("Min # of operations to reach {} char: {}".format(5, minOperations(5)))
-# n = 4
-# print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+n=9
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+n = 4
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 
-# n = 12
-# print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+n = 12
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
